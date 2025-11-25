@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="weather-container">
+        <div class="main-layout">
+            <div class="left-panel">
+                <h2 class="city-name">...</h2>
+                <div class="icon-and-temp">
+                    <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="Weather Icon" id="weatherIcon" class="weather-icon">
+                    <div class="temperature-box">
+                        <span class="temperature">...°C</span>
+                    </div>
+                </div>
+                <p class="date-time">... | ...</p>
+            </div>
+            
+            <div class="right-panel">
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Enter city name" class="search-input">
+                    <button id="searchBtn" class="search-button">
+                        <i class="fas fa-search"></i> </button>
+                </div>
+                
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <i class="fas fa-tint detail-icon"></i>
+                        <p class="detail-value"><span id="humidity">...</span>%</p>
+                        <p class="detail-label">Humidity</p>
+                    </div>
+
+                    <div class="detail-card">
+                        <i class="fas fa-wind detail-icon"></i>
+                        <p class="detail-value"><span id="wind">...</span> km/h</p>
+                        <p class="detail-label">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="./Assets/script.js"></script> 
+</body>
+</html>
